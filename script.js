@@ -8,6 +8,16 @@ let contactList = document.querySelector("main");
 // The addContact function will push the contact details (value) to the contacts array & call the contactLoader function.
 function addContact() {
     console.log(contactName.value,contactPhone.value)
+    // if (!contacts.includes( { "Name" : contactName.value } )) {
+    //     contacts.push(
+    //         {
+    //             "Name" : contactName.value,
+    //             "Phone Number" : contactPhone.value,
+    //         },
+    //     );
+    // } else {
+    //     alert(contactName.value + " already exists!")
+    // }
     contacts.push(
         {
             "Name" : contactName.value,
@@ -29,12 +39,12 @@ function contactLoader(contacts) {
         contactList.innerHTML += `
         <!-- contact-box is the individual contact containing contact info like name, phone number, etc. -->
         <div class="contact-box">
-            Name: ${contacts[i]["Name"]}
+            <strong>Name:</strong> ${contacts[i]["Name"]}
             <br>
-            Phone Number: ${contacts[i]["Phone Number"]}
+            <strong>Phone Number:</strong> ${contacts[i]["Phone Number"]}
             <br>
-            <button id="edit-contact" >Edit Contact</button>
-            <button id="add-contact" >Remove Contact</button>
+            <button id="edit-contact">Edit Contact</button>
+            <button id="add-contact">Remove Contact</button>
             </div>
         <br>
         `
