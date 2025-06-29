@@ -1,4 +1,4 @@
-Inspired by https://contacts.google.com
+Inspired by https://contacts.google.com/
 
 Colours: 
 #0057CB

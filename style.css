@@ -13,14 +13,19 @@ body {
     background-color:whitesmoke;
 }
 
-    .main-container {
-        /* padding: 1rem; */
-        border-radius: 0.5rem;
+    main {
+        padding: 1rem;
+        /* border-radius: 0.5rem; */
     }
 
-        .contact-container {
-            border: 0.15rem solid #0057CB;
-            background-color: #85A8FE;
+        .input-container {
+            border: 0.15rem solid #85A8FE;
             padding: 1rem;
             border-radius: 0.5rem;
+        }
+        
+        .contact-box {
+            background-color: #85A8FE;
+            padding: 1rem;
+            border-radius: 0.5rem;    
         }

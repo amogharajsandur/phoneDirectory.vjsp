@@ -9,24 +9,29 @@
     <link rel="shortcut icon" href="assets/icons/contact_page_icon.svg" type="image/x-icon">
 </head>
 <body>
-    
     <h1>Phone Directory (dot) vjsp</h1>
     <p>Phone Directory (dot) vjsp, part of 
         <a href="https://github.com/amogharajsandur" target="_blank">Project VJSP</a>, is a Vanilla JavaScript Project, built by 
         <a href="https://www.linkedin.com/in/amogharajsandur/" target="_blank">Amogha Raj Sandur</a>.
     </p>
-    <div class="main-container">
-        <!-- main-container is the div element that holds all the contact boxes (contact-container)(s). -->
-        <div class="contact-container">
+    <br>
+    <div class="input-container">
+        <form action="" method="post">
             <!-- contact-container is the individual cell containing contact info like name, phone number, etc. -->
             <label for="contact-name">Name:</label>
-            <input type="text" name="contact-name" id="contact-name" placeholder="Name">
+            <input type="text" name="contact-name" id="contact-name" placeholder="Name" required />
             <br>
             <label for="contact-phone">Phone Number:</label>
-            <input type="number" name="contact-phone" id="contact-phone" placeholder="Phone Number">
-            <button id="add-contact">Add Contact</button>
-        </div>
+            <input type="number" name="contact-phone" id="contact-phone" placeholder="Phone Number" required />
+            <br>
+            <button id="add-contact" type="button">Add Contact</button>
+            <button id="clear-details" type="reset">Clear Details</button>
+        </form>
     </div>
+    <hr>
+    <main>
+        <!-- main element holds all the contact a.k.a this is the contacts list -->
+    </main>
     <!-- JavaScript File -->
     <script src="script.js"></script>
 </body>
